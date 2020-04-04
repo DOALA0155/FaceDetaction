@@ -3,8 +3,8 @@ import cv2
 import matplotlib.pyplot as plt
 from functions import *
 
-image_name = "face1.jpg"
-image = cv2.imread("./original_images/face1.jpg".format(image_name))
+image_name = "face4.jpg"
+image = cv2.imread("./original_images/{}".format(image_name))
 gray_image = convert_to_gray(image)
 
 faces = detection_face(gray_image)
